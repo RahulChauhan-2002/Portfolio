@@ -1,6 +1,6 @@
 import React from 'react'
-import {logo} from '../assets/index'
-import {navLinksdata} from '../constants/index'
+import {logo} from '../../assets/index'
+import {navLinksdata} from '../../constants/index'
 import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {

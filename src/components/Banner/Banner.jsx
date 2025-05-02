@@ -3,7 +3,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { SiFigma, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
-import { bannerImg } from '../assets/index';
+import { bannerImg } from '../../assets/index';
 
 // Reusable component for the icon spans
 const BannerIcon = ({ children, className, ...props }) => {
