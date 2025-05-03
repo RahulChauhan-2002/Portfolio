@@ -5,7 +5,7 @@ import {projectOne, projectTwo, projectThree} from '../../assets/index'
 
 const Project = () => {
   return (
-    <section className='w-full py-20 border-b-[1px] border-b-black'>
+    <section id='projects' className='w-full py-20 border-b-[1px] border-b-black'>
         <div className='flex justify-center items-center text-center'>
             <Title
             title="VISIT MY PORTFOLIO AND YOUR FEEDBACK"

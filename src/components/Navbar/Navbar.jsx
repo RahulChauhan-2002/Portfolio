@@ -1,7 +1,7 @@
 import React from 'react'
 import {logo} from '../../assets/index'
 import {navLinksdata} from '../../constants/index'
-import { NavLink } from 'react-router-dom'
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
   return (
@@ -16,9 +16,14 @@ const Navbar = () => {
                       key={_id}
                       className='text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-[#ff014f] duration-300'  
                     >
-                    <NavLink to={link}>
-                        {title}
-                    </NavLink>
+                    <Link 
+                      activeClass='active'
+                      to={link}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >{title}</Link>
                     </li>
                 ))}
             </ul>

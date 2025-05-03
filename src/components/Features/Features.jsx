@@ -7,7 +7,7 @@ import { SiAntdesign, SiProgress } from 'react-icons/si'
 
 const Features = () => {
   return (
-    <section className='w-full py-20  border-b-[1px] border-b-black'
+    <section id='feature' className='w-full py-20  border-b-[1px] border-b-black'
     >
     <Title title="Features" des="What I Do"/>
     <div className='grid grid-cols-3 gap-20'>

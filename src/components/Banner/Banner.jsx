@@ -26,7 +26,7 @@ const Banner = () => {
     });
 
     return (
-        <section className='w-full pb-20 pt-10 flex items-center border-b-[1px] border-b-black'>
+        <section id='home' className='w-full pb-20 pt-10 flex items-center border-b-[1px] border-b-black'>
 
             {/* Left Side of Hero section */}
             <div className='w-1/2 flex flex-col gap-20'>
