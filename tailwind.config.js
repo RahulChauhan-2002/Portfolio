@@ -15,6 +15,8 @@ module.exports= {
           },
           boxShadow:{
               shadowOne: "10px 10px 19px #1c1022, -10px -10px 19px #262a2e",
+
+            //   [box-shadow:7px_9px_18px_#1c1022,_-7px_-9px_19px_#262a2e]
           },      
       },
   },
