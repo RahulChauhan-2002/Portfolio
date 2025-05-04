@@ -15,7 +15,7 @@ const ResumeCard = ({title,subTitle,result,des}) => {
                     <p className='text-sm mt-2 text-gray-400 group-hover:text-white duration-300'>{subTitle}</p>
                 </div>
                 <div>
-                    <p className='w-35 h-10 text-[#ff014f] bg-[rgba(0,0,0,0.25)] rounded-lg flex justify-center items-center [box-shadow:7px_9px_18px_#1c1022,_-7px_-9px_19px_#262a2e] text-sm font-medium '>{result}</p>
+                    <p className='w-35 h-10 text-[#ff014f] bg-[rgba(0,0,0,0.25)] rounded-lg flex justify-center items-center [box-shadow:7px_9px_18px_#1c1022,_-7px_-9px_19px_#262a2e] text-sm font-medium cursor-pointer '>{result}</p>
                 </div>
             </div>
             <p className='text-base font-medium text-gray-400 group-hover:text-gray-300 duration-300'>{des}</p>

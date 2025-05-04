@@ -1,7 +1,6 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import {logo} from "../../assets/index"
-import { div } from 'framer-motion/client';
 import FooterBottom from './FooterBottom';
 
 const BannerIcon = ({ children, className, ...props }) => {
@@ -22,13 +21,31 @@ const Footer = () => {
                 <img className="w-32" src={logo} alt="logo" />
                 <div className='flex gap-4'>
                     <BannerIcon>
-                        <FaFacebookF />
+                        <a 
+                        href="https://github.com/RahulChauhan-2002" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
+                        <FaGithub />
+                        </a>
                     </BannerIcon>
                     <BannerIcon>
-                        <FaTwitter />
-                    </BannerIcon>
-                    <BannerIcon>
+                        <a 
+                        href="https://www.linkedin.com/in/rahul2025/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
                         <FaLinkedinIn />
+                        </a>
+                    </BannerIcon>
+                    <BannerIcon>
+                        <a 
+                        href="https://x.com/ChauhanRahul47" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
+                        <FaTwitter />
+                        </a>
                     </BannerIcon>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { SiFigma, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
 import { bannerImg } from '../../assets/index';
@@ -31,7 +31,7 @@ const Banner = () => {
             {/* Left Side of Hero section */}
             <div className='w-1/2 flex flex-col gap-20'>
                 <div className='flex flex-col gap-5'>
-                    <h4 className='text-lg font-normal'>WELCOME TO MY WORLD</h4>
+                    <h4 className='text-lg font-normal uppercase'></h4>
                     <h1 className='text-6xl font-bold text-white'>
                         Hi, I'm <span className='text-[#ff014f] capitalize'>Rahul Chauhan</span>
                     </h1>
@@ -44,27 +44,45 @@ const Banner = () => {
                         />
                     </h2>
                     <p className='text-base leading-6 tracking-wide'>
-                    I use animation to enhance user experience by making interfaces more intuitive and engaging. My focus is not just on adding motion for decoration, but on using it purposefully to guide users through each interaction smoothly.
+                    I am a curious learner who loves coding, solving challenges, and building things from scratch. With strong DSA skills and a passion for full-stack development, I’m excited to grow fast, collaborate well, and build impactful digital products.
                     </p>
                 </div>
 
                 <div className='flex justify-between'>
                     <div>
-                        <h2 className='text-base uppercase mb-4'>Find me in</h2>
+                        <h2 className='text-base mb-4 uppercase'>Connect with me on</h2>
                         <div className='flex gap-4'>
                             <BannerIcon>
-                              <FaFacebookF />
+                                <a 
+                                    href="https://github.com/RahulChauhan-2002" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >
+                                    <FaGithub />
+                                </a>
                             </BannerIcon>
                             <BannerIcon>
-                                <FaTwitter />
+                                <a 
+                                    href="https://www.linkedin.com/in/rahul2025/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >
+                                    <FaLinkedinIn />
+                                </a>
                             </BannerIcon>
                             <BannerIcon>
-                                <FaLinkedinIn />
+                                <a 
+                                    href="https://x.com/ChauhanRahul47" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >
+                                    <FaTwitter />
+                                </a>
                             </BannerIcon>
                         </div>
                     </div>
                     <div>
-                        <h2 className='text-base uppercase mb-4'>BEST SKILL ON</h2>
+                        <h2 className='text-base uppercase mb-4'>Best skills I have</h2>
                         <div className='flex gap-4'>
                             <BannerIcon>
                                 <FaReact />

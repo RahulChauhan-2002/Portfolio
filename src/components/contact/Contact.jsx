@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import Title from '../Layouts/Title'
 import {contactImg} from '../../assets/index'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import validator from 'validator';
 
 
@@ -83,7 +83,7 @@ const Contact = () => {
                     <div className='flex flex-col gap-4'>
                         <h3 className='text-3xl font-bold text-white'>Rahul Chauhan</h3>
                         <p className='text-lg font-normal text-gray-400'>MERN Stack Developer</p>
-                        <p className='text-base text-gray-400 tracking-wide'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ipsam autem cumque, accusantium dicta odio.</p>
+                        <p className='text-base text-gray-400 tracking-wide'>Passionate MERN Stack Developer focused on writing clean code and building scalable web applications. Always eager to learn and collaborate on new projects.</p>
                         <p className='text-base text-gray-400 flex items-center gap-2 '>
                             Phone : <span className='text-[#c4cfde]'>+91 123456789</span>
                         </p>
@@ -92,17 +92,35 @@ const Contact = () => {
                         </p>
                     </div>
                     <div className='flex flex-col gap-4'>
-                        <h2 className='text-base uppercase mb-4'>Find me in </h2>
+                        <h2 className='text-base uppercase mb-4'>Connect with me on </h2>
                         <div className='flex gap-4'>
-                                <BannerIcon>
-                                    <FaFacebookF />
-                                </BannerIcon>
-                                <BannerIcon>
-                                    <FaTwitter />
-                                </BannerIcon>
-                                <BannerIcon>
-                                    <FaLinkedinIn />
-                                </BannerIcon>
+                            <BannerIcon>
+                                <a 
+                                href="https://github.com/RahulChauhan-2002" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                >
+                                <FaGithub />
+                                </a>
+                            </BannerIcon>
+                            <BannerIcon>
+                                <a 
+                                href="https://www.linkedin.com/in/rahul2025/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                >
+                                <FaLinkedinIn />
+                                </a>
+                            </BannerIcon>
+                            <BannerIcon>
+                                <a 
+                                href="https://x.com/ChauhanRahul47" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                >
+                                <FaTwitter />
+                                </a>
+                            </BannerIcon>
                         </div>
                     </div>
               </div>
