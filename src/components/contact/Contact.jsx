@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react';
 import Title from '../Layouts/Title'
 import {contactImg} from '../../assets/index'
@@ -71,10 +70,10 @@ const Contact = () => {
         <Title title="CONTACT" des="Contact With Me" />
       </div>
       <div className="w-full">
-            <div className="w-full h-auto flex justify-between">
+            <div className="w-full h-auto flex flex-col lg:flex-row justify-between">
 
                 {/* Contact left part */}
-              <div className="w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg [box-shadow:7px_9px_18px_#1c1022,_-7px_-9px_19px_#262a2e] flex flex-col gap-8 justify-center">
+              <div className="w-full lg:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-4 lg:p-8 rounded-lg [box-shadow:7px_9px_18px_#1c1022,_-7px_-9px_19px_#262a2e] flex flex-col gap-8 justify-center">
                     <img 
                     className='w-full h-64 object-cover rounded-lg mb-2'
                     src={contactImg} 
@@ -126,12 +125,12 @@ const Contact = () => {
               </div>
 
               {/* Contact right part */}
-              <div className="w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg [box-shadow:7px_9px_18px_#1c1022,_-7px_-9px_19px_#262a2e] flex flex-col gap-8 justify-center">
-                <form
-                   className='w-full h-full flex flex-col gap-6 py-5'
+              <div className="w-full lg:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] p-4 lg:p-8 rounded-lg [box-shadow:7px_9px_18px_#1c1022,_-7px_-9px_19px_#262a2e] flex flex-col gap-8 justify-center">
+                <div
+                   className='w-full h-full flex flex-col lgl:flex-row gap-4 lg:gap-6 py-2 lg:py-5'
                 >
-                    <div className='flex w-full gap-10'>
-                        <div className='w-1/2 flex flex-col gap-4'>
+                    <div className='w-full flex flex-col lgl:flex-row gap-10'>
+                        <div className='w-full lgl:w-1/2 flex flex-col gap-4'>
                             <p className='text-sm text-gray-400 uppercase tracking-wide'>Your Name</p>
                             <input
                                 onChange={(e)=>setusername(e.target.value)} 
@@ -140,7 +139,7 @@ const Contact = () => {
                                 type="text" 
                             />
                         </div>
-                        <div className='w-1/2 flex flex-col gap-4'>
+                        <div className='w-full lgl:w-1/2 flex flex-col gap-4'>
                             <p className='text-sm text-gray-400 uppercase tracking-wide'>Phone Number</p>
                             <input 
                                 onChange={(e)=>setphoneNumber(e.target.value)} 
@@ -189,7 +188,7 @@ const Contact = () => {
                     {successMsg && <p className='text-green-500 text-sm text-center tracking-wide animate-bounce py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] font-bold'>{successMsg}</p>}
                     {errMsg && <p className='text-red-500 text-sm text-center tracking-wide animate-bounce py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] font-bold'>{errMsg}</p>}
 
-                </form>
+                </div>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ import { FaGlobe } from 'react-icons/fa'
 
 const ProjectCard = ({title,des,src}) => {
   return (
-    <div className='w-full px-12 h-auto py-10 rounded-lg flex flex-col bg-gradient-to-r from-[#212428] to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000  [box-shadow:7px_9px_18px_#1c1022,_-7px_-9px_19px_#262a2e]'>
+    <div className='w-full xl:px-12 h-auto xl:py-10 rounded-lg flex flex-col bg-gradient-to-r from-[#212428] to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000  [box-shadow:7px_9px_18px_#1c1022,_-7px_-9px_19px_#262a2e]'>
         <div className='w-full h-[80%] overflow-hidden rounded-lg'>
             <img 
               src={src} 

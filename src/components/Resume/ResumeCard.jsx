@@ -8,10 +8,10 @@ const ResumeCard = ({title,subTitle,result,des}) => {
                 <span className='w-3 h-3 rounded-full  bg-[#212428] inline-flex group-hover:bg-[#ff014f] duration-300'></span>
             </span>
         </div>
-        <div className='w-full bg-[rgba(0,0,0,0.2)] hover:bg-[rgba(0,0,0,0.3)] duration-300 rounded-lg px-10 flex flex-col justify-center gap-10 [box-shadow:7px_9px_18px_#1c1022,_-7px_-9px_19px_#262a2e]'>
-            <div className='flex justify-between items-center'>
+        <div className='w-full bg-[rgba(0,0,0,0.2)] hover:bg-[rgba(0,0,0,0.3)] duration-300 rounded-lg flex flex-col justify-center p-4 lgl:px-10 gap-6 lgl:gap-10 [box-shadow:7px_9px_18px_#1c1022,_-7px_-9px_19px_#262a2e]'>
+            <div className="flex flex-col lg:flex-row justify-between gap-4 lgl:gap-0 lg:items-center">
                 <div>
-                    <h3 className='text-2xl font-semibold group-hover:text-white duration-300'>{title}</h3>
+                    <h3 className='text-xl md:text-2xl  font-semibold group-hover:text-white duration-300'>{title}</h3>
                     <p className='text-sm mt-2 text-gray-400 group-hover:text-white duration-300'>{subTitle}</p>
                 </div>
                 <div>

@@ -26,10 +26,10 @@ const Banner = () => {
     });
 
     return (
-        <section id='home' className='w-full pb-20 pt-10 flex items-center border-b-[1px] border-b-black'>
+        <section id='home' className='w-full pb-20 pt-10 gap-10 xl:gap-0 flex flex-col lg:flex-row  items-center border-b-[1px] border-b-black'>
 
             {/* Left Side of Hero section */}
-            <div className='w-1/2 flex flex-col gap-20'>
+            <div className='w-full lg:w-1/2 flex flex-col gap-20'>
                 <div className='flex flex-col gap-5'>
                     <h4 className='text-lg font-normal uppercase'></h4>
                     <h1 className='text-6xl font-bold text-white'>
@@ -48,7 +48,7 @@ const Banner = () => {
                     </p>
                 </div>
 
-                <div className='flex justify-between'>
+                <div className='flex flex-col gap-6 xl:flex-row lg:gap-0 justify-between'>
                     <div>
                         <h2 className='text-base mb-4 uppercase'>Connect with me on</h2>
                         <div className='flex gap-4'>
@@ -102,13 +102,13 @@ const Banner = () => {
             </div>
 
             {/* Right Side of Hero section */}
-            <div className='w-1/2 flex justify-center items-center relative'>
+            <div className='w-full lg:w-1/2 flex justify-center items-center relative'>
                 <img 
-                    className='w-[500px] h-[680px] z-10'
+                    className='w-[300px] h-[400px] lg:w-[500px] lg:h-[680px] z-10'
                     src={bannerImg} 
                     alt="" 
                 />
-                <div className='absolute bottom-0 w-[500px] h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center'>
+                <div className='absolute bottom-0 w-[350px] h-[300px] lg:w-[500px] lg:h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center'>
 
                 </div>
             </div>

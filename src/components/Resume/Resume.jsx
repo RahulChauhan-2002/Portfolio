@@ -34,7 +34,7 @@ const Resume = () => {
             />
         </div>
         <div>
-            <ul className='w-full grid grid-cols-3'>
+            <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                 <li 
                    className={`${educationData ? "border-[#ff014f] rounded-lg":"border-transparent"} resumeLi `}
 
