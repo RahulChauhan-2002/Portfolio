@@ -26,7 +26,7 @@ const Resume = () => {
                   fontFamily: 'Arial, sans-serif',
                 }}
               >
-                See My Resume in PDF Format
+                View My Resume in PDF Format
               </a>
             }
             

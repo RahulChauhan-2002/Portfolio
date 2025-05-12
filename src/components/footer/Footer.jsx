@@ -18,7 +18,9 @@ const Footer = () => {
     <div>
         <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="w-full h-full flex flex-col gap-8">
-                <img className="w-32" src={logo} alt="logo" />
+                <div className="h-[80px] w-[139px] flex items-center justify-center pl-3">
+                    <span className="text-2xl text-[#ff014f] font-extrabold uppercase tracking-wider">Portfolio</span>
+                </div>
                 <div className='flex gap-4'>
                     <BannerIcon>
                         <a 
