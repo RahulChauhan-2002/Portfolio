@@ -17,7 +17,7 @@ const Resume = () => {
             <Title
             title={
               <a
-                href="https://drive.google.com/file/d/1D1y_w-fb9fKiy5ZrmXAR35Wa3c69VGOw/view?usp=sharing"
+                href="https://drive.google.com/file/d/1y0Jvkp_l72Ge1KGXAoxvi-Q5UaYHhAxH/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
