@@ -3,7 +3,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { SiFigma, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
-import { bannerImg } from '../../assets/index';
+import { bannerImg, bannerPersonImg } from '../../assets/index';
 
 // Reusable component for the icon spans
 const BannerIcon = ({ children, className, ...props }) => {
@@ -104,11 +104,17 @@ const Banner = () => {
             {/* Right Side of Hero section */}
             <div className='w-full lg:w-1/2 flex justify-center items-center relative'>
                 <img 
-                    className='w-[300px] h-[400px] lg:w-[500px] lg:h-[680px] z-10'
-                    src={bannerImg} 
-                    alt="" 
+                    className='w-[300px] h-[400px] lg:w-[500px] lg:h-[680px] z-10 object-cover'
+                    src={bannerPersonImg} 
+                    alt="Rahul Chauhan" 
+                    style={{
+                        backgroundColor: '#212428'
+                    }}
                 />
-                <div className='absolute bottom-0 w-[350px] h-[300px] lg:w-[500px] lg:h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center'>
+                <div className='absolute bottom-0 w-[350px] h-[300px] lg:w-[500px] lg:h-[500px] shadow-shadowOne flex justify-center items-center'
+                     style={{
+                        backgroundColor: '#212428'
+                     }}>
 
                 </div>
             </div>
